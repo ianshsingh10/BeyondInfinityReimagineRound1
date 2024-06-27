@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vmin;
+    z-index: 5;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: #1b2a3160 0px 2px ;
+}
+.logo{
+    border: 2px solid black;
+    position: absolute;
+    left: 8vmax;
+    padding-top: 4vmin;
+    width: 20vmax;
+    line-height: 25px;
+    font-family: Helvetica;
+    font-size: max(2.5vmax,30px);
+}
+#one,#two{
+    height: 35px;
+    width: 35px;
+    scale: .8;
+    z-index: 1;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+#one{
+    top:-29px;
+    left:10px;
+}
+#two{
+    top:-20px;
+    left:-35px;
+}
+.cover{
+    width: 10vmax;
+    height: 110%;
+    position: absolute;
+    top: -1.5vw;
+    left:-10vmax;
+    z-index: 0.5;
+    background-color: white;
+}
+.brand-name{
+    position: relative;
+    left: -280px;
+    background-color: transparent;
+}
+.slider{
+    height: 40px;
+    width: 50vmax;
+    position: relative;
+    left: 50%;
+    transform: translate(-45%);
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #006491;
+    border: 2px solid #006491;
+    box-shadow: #1b2a3198 0px 3px inset,#1b2a3198 0px 3px;
+    overflow: hidden;
+}
+.ele{
+    position: relative;
+    width: 10vmax;
+    font-size: max(1.5vmax,15px);
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    background-color: transparent;
+    text-align: center;
+    align-self: center;
+}
+.animation{
+    width: 10vmax;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+    background-color: #168ABE;
+    box-shadow: #1b2a3198 3px 0px;
+    border-radius: 50px;
+}
+.nav{
+    position: absolute;
+    right: 20vmax;
+    font-size: 40px;
+    color: #006491;
+}
+.cart{
+    position: absolute;
+    right: 13vmax;
+    font-size: 40px;
+    color: #E31837;
+}
+.profile{
+    position: absolute;
+    right: 5vmax;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: #006491;
+}
+.fa-user{
+    background-color: #006491;
+}
+#home-page{
+    width: 100%;
+    padding: 10vh;
+}
+.landing{
+    margin-top: 5vh;
+    width: 100%;
+    min-height: 80vmin;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: radial-gradient(50% 50% at 50% 50%, #F9FDFF 0%, #3AB2E7 100%);
+}
+.text{
+    min-width: 10vmin;
+    padding: 10vmin;
+    color: white;
+    font-size: 10vmin;
+    font-weight: bold;
+    flex-grow: 1;
+    background-color: transparent;
+}
+.image{
+    min-width: 50vmin;
+    min-height: 50vmin;
+    z-index: 1;
+    background-color: transparent;
+    background-image: url("Images/P1.png");
+    background-size: cover;
+}
+.order-now{
+    width: 25vmin;
+    height: 7vmin;
+    padding: 2px;
+    z-index: 2;
+    border-radius: 30px;
+    background-color: #E31837;
+    position: absolute;
+    left: 35vmin;
+    bottom: 20%;
+    text-align: center;
+    font-size: 3vmin;
+    color: #FFFFFF;
+}
+#deal-page{
+    height: 100vmin;
+    padding-top: 10vmin;
+}
+#meal-combo{
+    width: 55vmin;
+    height: 40vmin;
+    background-image: url(Images/meal\ combo.png);
+    background-size: cover;
+}
+.bulk-order{
+    padding: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+h1{
+    width: 100%;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#box1{
+    width:50vmin;
+    background-color: #87ceed;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 5vmin;
+    padding-bottom: 5vmin;
+    font-size: 20px;
+    flex-grow: .2;
+}
+#details{
+    margin-top: 2vmin;
+    background-color: transparent;
+}
+input{
+    width: 40vmin;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: 8px;
+    font-size: 2vmin;
+    font-weight: bold;
+    margin-top: 1vmin;
+    height:35px;
+    margin-bottom: 2vmin;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: #168ABE;
+}
+button{
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color: #E31837;
+    width: 120px;
+    text-align: center;
+    height:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.left-box{
+    max-width:100vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2vmin;
+}
+#box2{
+    width:100%;
+    height: 25vmin;
+    background-image: url("Images/virtual_pizza_party@3x\ 1\ \(1\).jpg");
+    background-size: cover;
+}
+#content{
+    width:100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#line3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+#box3{
+    width: 75vmin;
+    height: 35vmin;
+    background-image:url("Images/image\ 3\ \(1\).jpg") ;
+    background-size: cover;
+    flex-grow: 1;
+}
+#content2{
+    width: 20%;
+    background-color: #FFFFFF;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;
+}
+#line4{
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 170px;
+    font-size: 14px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box4{
+    height: 40vmin;
+    background-image: url(Images/footer-background.jpg);
+    background-size: cover;
+}
+#box5{
+    background-color: #2596c9;
+}
+li{
+    list-style-type: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+#Menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #2596c9;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+@media screen and (max-width:1350px) {
+    .text{
+        width: 100%;
+    }
+}

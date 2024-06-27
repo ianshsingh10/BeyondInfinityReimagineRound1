@@ -1,0 +1,243 @@
+let lg=gsap.timeline({repeat:1});
+lg.to("#two",{
+    y:'38px',
+})
+lg.to("#one",{
+    y:'28px',
+    x:'-26px',
+})
+lg.to("#two",{
+    y:'56px',
+    x:'-18px',
+},'a')
+lg.to("#one",{
+    y:'46px',
+    x:'-44px',
+},'a')
+lg.to(".brand-name",{
+    x:'280px',
+    duration: 2,
+})
+
+let active="home";
+document.querySelectorAll(".ele").forEach((ele) => {
+    let tl=gsap.timeline();
+    ele.addEventListener("mouseenter",()=>{
+        let selected=ele.getAttribute("id");
+        console.log(selected);
+        if(selected=="home"){
+            tl.to(".animation",{
+                x:"0vmax",
+            });
+        }
+        if(selected=="deals"){
+            tl.to(".animation",{
+                x:"10vmax",
+            });
+        }if(selected=="menu"){
+            tl.to(".animation",{
+                x:"20vmax",
+            });
+        }
+        if(selected=="track"){
+            tl.to(".animation",{
+                x:"30vmax",
+            });
+        }
+        if(selected=="bulk"){
+            tl.to(".animation",{
+                x:"40vmax",
+            });
+        }
+    });
+    ele.addEventListener("mouseleave",()=>{
+        console.log(active);
+        if(active=="home"){
+            tl.to(".animation",{
+                x:"0vmax",
+            });
+        }
+        if(active=="deals"){
+            tl.to(".animation",{
+                x:"10vmax",
+            });
+        }if(active=="menu"){
+            tl.to(".animation",{
+                x:"20vmax",
+            });
+        }
+        if(active=="track"){
+            tl.to(".animation",{
+                x:"30vmax",
+            });
+        }
+        if(active=="bulk"){
+            tl.to(".animation",{
+                x:"40max",
+            });
+        }
+    });
+});
+document.querySelectorAll(".ele").forEach((ele) =>{
+    ele.addEventListener("click",()=>{
+    active=ele.getAttribute("id");
+    console.log(active);
+    if(active=="home"){
+        leave="home";
+        tl.to(".animation",{
+            x:"0vmax",
+        });
+    }
+    if(active=="deals"){
+        leave="deals";
+        tl.to(".animation",{
+            x:"10vmax",
+        });
+    }if(active=="menu"){
+        tl.to(".animation",{
+            x:"20vmax",
+        });
+    }
+    if(active=="track"){
+        tl.to(".animation",{
+            x:"30vmax",
+        });
+    }
+    if(active=="bulk"){
+        tl.to(".animation",{
+            x:"40vmax",
+        });
+    }
+});
+});
+let c=1;
+let tl=gsap.timeline({repeat:Infinity});
+tl.from("#image",{
+    rotate: -360,
+},'b')
+tl.fromTo("#text-1",{
+    x:'50vmin',
+},{
+    x:'-5vmin',
+},'b')
+tl.fromTo("#text-2",{
+    x:'-50vmin',
+},{
+    x:'5vmin',
+},'b')
+tl.to("#text-1",{
+    x:'0vmin',
+},'c')
+tl.to("#text-2",{
+    x:'0vmin',
+},'c')
+tl.to("#text-1",{
+    x:'60vmin',
+    duration:1,
+    delay:2,
+},'c')
+tl.to("#text-2",{
+    x:'-50vmin',
+    duration:1,
+    delay:2,
+},'c')
+tl.to("#image",{
+    rotate: 360,
+    delay:2,
+},'c')
+tl.to("#image",{
+    backgroundImage : "url('Images/P2.png')",
+    duration:0,
+},'d')
+tl.to("#text-1",{
+    innerText:"BIGGEST",
+},'d')
+tl.to("#text-2",{
+    value:"OFFERS",
+},'d')
+tl.to("#image",{
+    rotate: -360,
+},'e')
+tl.fromTo("#text-1",{
+    x:'60vmin',
+},{
+    x:'-5vmin',
+},'e')
+tl.fromTo("#text-2",{
+    x:'-50vmin',
+},{
+    x:'5vmin',
+},'e')
+tl.to("#text-1",{
+    x:'0vmin',
+},'f')
+tl.to("#text-2",{
+    x:'0vmin',
+},'f')
+tl.to("#text-1",{
+    x:'60vmin',
+    duration:1,
+    delay:2,
+},'f')
+tl.to("#text-2",{
+    x:'-50vmin',
+    duration:1,
+    delay:2,
+},'f')
+tl.to("#image",{
+    rotate: 360,
+    delay:2,
+},'f')
+tl.to("#image",{
+    backgroundImage : "url('Images/P3.png')",
+    duration:0,
+},'g')
+tl.to("#text-1",{
+    innerText:"ORDER",
+},'g')
+tl.to("#text-2",{
+    innerText:"NOW",
+},'g')
+tl.to("#image",{
+    rotate: -360,
+},'h')
+tl.fromTo("#text-1",{
+    x:'50vmin',
+},{
+    x:'-5vmin',
+},'h')
+tl.fromTo("#text-2",{
+    x:'-50vmin',
+},{
+    x:'5vmin',
+},'h')
+tl.to("#text-1",{
+    x:'0vmin',
+},'i')
+tl.to("#text-2",{
+    x:'0vmin',
+},'i')
+tl.to("#text-1",{
+    x:'50vmin',
+    duration:1,
+    delay:2,
+},'i')
+tl.to("#text-2",{
+    x:'-50vmin',
+    duration:1,
+    delay:2,
+},'i')
+tl.to("#image",{
+    rotate: 360,
+    delay:2,
+},'i')
+tl.to("#image",{
+    backgroundImage : "url('Images/P1.png')",
+    duration:0,
+},'j')
+tl.to("#text-1",{
+    innerText:"GRAET",
+},'j')
+tl.to("#text-2",{
+    innerText:"DEALS",
+},'j')
