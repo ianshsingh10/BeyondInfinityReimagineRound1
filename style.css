@@ -162,14 +162,39 @@
     color: #FFFFFF;
 }
 #deal-page{
-    height: 100vmin;
-    padding-top: 10vmin;
+    min-height: 100vmin;
+    padding: 10vmin;
+}
+.deal-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img{
+    position: absolute;
+}
+#upto{
+    width: 25vmax;
 }
 #meal-combo{
-    width: 55vmin;
-    height: 40vmin;
-    background-image: url(Images/meal\ combo.png);
-    background-size: cover;
+    left: 35vmax;
+    width: 25vmax;
+}
+#family-treat{
+    left: 65vmax;
+    width: 25vmax;
+}
+#great-value{
+    top: 50vmin;
+    left: 65vmin;
+    width: 50vmax;
+}
+#explore-all{
+    width: 30vmin;
+    height: 8vmin;
+    background-color: #006491;
 }
 .bulk-order{
     padding: 10vh;
