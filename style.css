@@ -1,9 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    text-decoration: none;
-}
 .navbar{
     position: fixed;
     top: 0;
@@ -54,23 +48,24 @@
     background-color: transparent;
 }
 .slider{
-    height: 40px;
+    height: 3vmax;
     width: 50vmax;
     position: relative;
+    top:1vmax;
     left: 50%;
     transform: translate(-45%);
     display: flex;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 2vmax;
     background-color: #006491;
-    border: 2px solid #006491;
-    box-shadow: #1b2a3198 0px 3px inset,#1b2a3198 0px 3px;
+    border: 0.2vmax solid #006491;
+    box-shadow: #1b2a3198 0px 0.5vmax inset,#1b2a3198 0px 0.5vmax;
     overflow: hidden;
 }
 .ele{
     position: relative;
     width: 10vmax;
-    font-size: max(1.5vmax,15px);
+    font-size: 1.5vmax;
     color: white;
     text-decoration: none;
     z-index: 1;
@@ -91,7 +86,7 @@
 .nav{
     position: absolute;
     right: 20vmax;
-    font-size: 40px;
+    font-size: 2vmax;
     color: #006491;
 }
 .cart{
@@ -162,6 +157,7 @@
     color: #FFFFFF;
 }
 #deal-page{
+<<<<<<< HEAD
     min-height: 100vmin;
     padding: 10vmin;
 }
@@ -177,6 +173,12 @@
 }
 #upto{
     width: 25vmax;
+=======
+    height: 100vmin;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+
+>>>>>>> 852d12d4f84e024af4880eb5ea3b325337ded303
 }
 #meal-combo{
     left: 35vmax;
@@ -197,6 +199,10 @@
     background-color: #006491;
 }
 .bulk-order{
+    position: relative;
+    top:100vmax;
+    width: 100%;
+    height: auto;
     padding: 10vh;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -205,7 +211,8 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2vmin;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
 }
 h1{
     width: 100%;
@@ -302,6 +309,8 @@ button{
     font-family: Arial, Helvetica, sans-serif;
 }
 #box4{
+    position: absolute;
+    top: 100vmax;
     height: 40vmin;
     background-image: url(Images/footer-background.jpg);
     background-size: cover;
@@ -317,16 +326,185 @@ li{
     font-weight: lighter;
     padding-bottom: 5px;
 }
-#Menu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #2596c9;
-    margin-left: 30px;
-    padding-top: 10px;
-}
+
 @media screen and (max-width:1350px) {
     .text{
         width: 100%;
     }
+}
+
+#menu-page{
+    position: relative;
+    width: 100%;
+    height: 100vmax;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+}
+
+
+#bgImage{
+    height:50vmax;
+    width: auto;
+    position: fixed;
+    top:6vmax;
+    right: 0vmax;
+    z-index: -1;
+}
+
+#sideDiv{
+    height: 52vmax;
+    width: 15vmax;
+    background-color: #E31837;
+    position: absolute;
+    top: 15vmax;
+    left: 0vmax;
+    border-top-right-radius: 2vmax;
+    border-bottom-right-radius: 2vmax;
+    box-shadow: 0.4vmax 0.4vmax 1vmax 0.1vmax #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideText{
+    font-size: 1.5vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    left:1vmax;
+    padding: 1vmax;
+}
+
+.sideText:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
+}
+
+
+#menuHeading{
+    font-size: 4vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    top: 7vmax;
+    left: 0%;
+}
+
+#menuItems{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmax;
+    position: absolute;
+    left: 17vmax;
+}
+
+.items{
+    height: 25vmax;
+    width: 17vmax;
+    border-radius: 1.2vmax;
+    background-color: white;
+    box-shadow: 4px 4px 10px 1px #000000;
+    position: relative;
+    top: 15vmax;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+.items:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.itemNames{
+    font-size: 1.8vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    top: 8vmax;
+    left: 1vmax;
+}
+
+.itemDesc{
+    font-size: 1vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    position: absolute;
+    top: 14vmax;
+    left: 1vmax;
+    opacity: 0.7;
+}
+
+.pizzaImages{
+    border-top-left-radius: 1.2vmax;
+    border-top-right-radius: 1.2vmax;
+    width:17vmax;
+    height: auto;
+}
+
+.priceBoxes{
+    position: absolute;
+    right: 1vmax;
+    top: 0.4vmax;
+    height: 2.2vmax;
+    width: 3.3vmax;
+    background-color: #E31837;
+    border-radius: 1vmax;
+}
+.prices{
+    font-size: 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    top: 0.2vmax;
+    left:0.4vmax;
+}
+
+.customise{
+    font-size: 1vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: absolute;
+    left: 0.3vmax;
+
+}
+.customiseBoxes{
+    background-color: #006491;
+    height: 1.5vmax;
+    width: 6.4vmax;    
+    border-radius: 0.4vmax;
+    position: absolute;
+    left: 1vmax;
+    top: 22vmax;
+}
+
+.customiseBoxes:hover{
+    cursor: pointer;
+    background-color: #E31837;
+    transition: 0.3s;
+}
+
+#addToCart{
+    position: absolute;
+    left: 9.5vmax;
+    top:21.8vmax;
+    height: 2vmax;
+    width: 6vmax; 
+}
+
+#addToCart:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
