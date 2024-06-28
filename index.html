@@ -8,7 +8,6 @@
     <title>Domino's Pizza</title>
 </head>
 <body>
-  <div id="everything">
     <header>
         <div class="navbar">
             <div class="logo">
@@ -32,7 +31,6 @@
                 <i class="fa-solid fa-user"></i>
             </div>
         </div>
-        
     </header>
     <div id="home-page">
         <div class="landing">
@@ -50,13 +48,9 @@
             </button>
         </div>
     </div>
-    <div id="deal-page">
+    <!-- <div id="deal-page">
         <h1>DEALS & OFFER</h1>
-<<<<<<< HEAD
         <div class="deal-box">
-=======
-        <div>auto
->>>>>>> 852d12d4f84e024af4880eb5ea3b325337ded303
             <a href="#">
                 <img src="Images/up to.png" id="upto" class="img"></img>
             </a>
@@ -73,25 +67,25 @@
                 <div id="explore-all" class="img"></div>
             </a>
         </div>
-    </div>
-
+    </div> -->
     <div id="menu-page">
-        
+        <h1 id="menuHeading">Menu</h1>
         <!-- Need to add effect for this side div -->
-        <div id="sideDiv">
-            <p class="sideText" id="New Launches" onclick="filterSelection('all')">All</p>
-            <p class="sideText" id="Recommended" onclick="filterSelection('recommended')">Recommended</p>
-            <p class="sideText" id="Everyday Value" onclick="filterSelection('everydayValue')">Everyday Value</p>
-            <p class="sideText" id="Veg Pizza" onclick="filterSelection('vegPizza')">Veg Pizza</p>
-            <p class="sideText" id="Non-Veg Pizza" onclick="filterSelection('nonVegPizza')">Non-Veg Pizza</p>
-            <p class="sideText" id="Beverages" onclick="filterSelection('beverages')">Beverages</p>
-            <p class="sideText" id="Garlic Breads & More" onclick="filterSelection('bread')">Garlic Breads & More</p>
-            <p class="sideText" id="Pizza Mania" onclick="filterSelection('mania')">Pizza Mania</p>
-            <p class="sideText" id="Combos" onclick="filterSelection('combos')">Combos</p>
-            <p class="sideText" id="Desserts" onclick="filterSelection('desserts')">Desserts</p>
+        <div class="left-side">
+            <div id="sideDiv">
+                <p class="sideText" id="New Launches" onclick="filterSelection('all')">All</p>
+                <p class="sideText" id="Recommended" onclick="filterSelection('recommended')">Recommended</p>
+                <p class="sideText" id="Everyday Value" onclick="filterSelection('everydayValue')">Everyday Value</p>
+                <p class="sideText" id="Veg Pizza" onclick="filterSelection('vegPizza')">Veg Pizza</p>
+                <p class="sideText" id="Non-Veg Pizza" onclick="filterSelection('nonVegPizza')">Non-Veg Pizza</p>
+                <p class="sideText" id="Beverages" onclick="filterSelection('beverages')">Beverages</p>
+                <p class="sideText" id="Garlic Breads & More" onclick="filterSelection('bread')">Garlic Breads & More</p>
+                <p class="sideText" id="Pizza Mania" onclick="filterSelection('mania')">Pizza Mania</p>
+                <p class="sideText" id="Combos" onclick="filterSelection('combos')">Combos</p>
+                <p class="sideText" id="Desserts" onclick="filterSelection('desserts')">Desserts</p>
+            </div>
         </div>
         <div id="menuDiv">
-            <h1 id="menuHeading">Menu</h1>
 
             <!-- Can add more items here if you want -->
             <div id="menuItems">
@@ -154,93 +148,85 @@
                     <div class="priceBoxes"><p class="prices">₹699</p></div>
                     <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
                     <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                    </div> 
+                </div> 
 
-                    <!-- Beverages -->
-                     
-                    <div id="item9" class="items filterDiv all beverages">
-                        <img src="Images/beverages.png" alt="Pizza1" class="pizzaImages">
-                        <p class="itemNames">Pepsi (295ml)</p>
-                        <p class="itemDesc">Sparkling & Refreshing Beverage</p>
-                        <div class="priceBoxes"><p class="prices">₹49</p></div>
-                        <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                        <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                        </div>
-
+                <!-- Beverages -->
+                <div id="item9" class="items filterDiv all beverages">
+                    <img src="Images/beverages.png" alt="Pizza1" class="pizzaImages">
+                    <p class="itemNames">Pepsi (295ml)</p>
+                    <p class="itemDesc">Sparkling & Refreshing Beverage</p>
+                    <div class="priceBoxes"><p class="prices">₹49</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
+                    </div>
 
 
-                            <!-- Garlic bread  -->
-                            <div id="item11" class="items filterDiv all bread">
-                                <img src="Images/garlic-bread.jpeg" alt="garlic-bread" class="pizzaImages">
-                                <div class="markVeg">
-                                    <div class="markCircleVeg"></div>
-                                </div>
-                                <p class="itemNames">Garlic Breadstick</p>
-                                <p class="itemDesc">Baked to perfection. Your perfect pizza partener! Tastes best with dip</p>
-                                <div class="priceBoxes"><p class="prices">₹179</p></div>
-                                <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                                <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                            </div>
 
-                            <!-- combos  -->
-                            <div id="item12" class="items filterDiv all combos">
-                                <img src="Images/combo1.jpeg" alt="Combo1" class="pizzaImages">
-                                <div class="markVeg">
-                                    <div class="markCircleVeg"></div>
-                                </div>
-                                <p class="itemNames">Match Day Veg Combo</p>
-                                <p class="itemDesc">Regular Margherita +Regular Farmhouse + Garlic Bread + Pepsi</p>
-                                <div class="priceBoxes"><p class="prices">₹459</p></div>
-                                <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                                <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                            </div>
-                            <div id="item13" class="items filterDiv all combos">
-                                <img src="Images/combo2.jpeg" alt="Combo2" class="pizzaImages">
-                                <div class="markNonVeg">
-                                    <div class="markCircleNonVeg"></div>
-                                </div>
-                                <p class="itemNames">Match Day Non Veg Combo</p>
-                                <p class="itemDesc">Regular Pepper BBQ Chicken + Regular Chicken Sausage + Garlic Bread + Pepsi</p>
-                                <div class="priceBoxes"><p class="prices">₹529</p></div>
-                                <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                                <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                            </div>
+                <!-- Garlic bread  -->
+                <div id="item11" class="items filterDiv all bread">
+                    <img src="Images/garlic-bread.jpeg" alt="garlic-bread" class="pizzaImages">
+                    <div class="markVeg">
+                        <div class="markCircleVeg"></div>
+                    </div>
+                    <p class="itemNames">Garlic Breadstick</p>
+                    <p class="itemDesc">Baked to perfection. Your perfect pizza partener! Tastes best with dip</p>
+                    <div class="priceBoxes"><p class="prices">₹179</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
+                </div>
 
-                            <!-- Desserts  -->
-                            <div id="item14" class="items filterDiv all desserts">
-                                <img src="Images/desserts1.jpeg" alt="Desserts" class="pizzaImages">
-                                <div class="markVeg">
-                                    <div class="markCircleVeg"></div>
-                                </div>
-                                <p class="itemNames">Red Velvet Lava Cake</p>
-                                <p class="itemDesc">A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to give a burst of flavour in every bite!</p>
-                                <div class="priceBoxes"><p class="prices">₹139</p></div>
-                                <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                                <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                            </div>
-                            
-                            <div id="item15" class="items filterDiv all desserts">
-                                <img src="Images/desserts2.jpeg" alt="Desserts" class="pizzaImages">
-                                <div class="markVeg">
-                                    <div class="markCircleVeg"></div>
-                                </div>
-                                <p class="itemNames">Butterscotch Mousse Cake</p>
-                                <p class="itemDesc">Sweet temptation! Butterscotch flavored mousse</p>
-                                <div class="priceBoxes"><p class="prices">₹109</p></div>
-                                <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
-                                <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
-                            </div>
+                <!-- combos  -->
+                <div id="item12" class="items filterDiv all combos">
+                    <img src="Images/combo1.jpeg" alt="Combo1" class="pizzaImages">
+                    <div class="markVeg">
+                        <div class="markCircleVeg"></div>
+                    </div>
+                    <p class="itemNames">Match Day Veg Combo</p>
+                    <p class="itemDesc">Regular Margherita +Regular Farmhouse + Garlic Bread + Pepsi</p>
+                    <div class="priceBoxes"><p class="prices">₹459</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
+                </div>
+                <div id="item13" class="items filterDiv all combos">
+                    <img src="Images/combo2.jpeg" alt="Combo2" class="pizzaImages">
+                    <div class="markNonVeg">
+                        <div class="markCircleNonVeg"></div>
+                    </div>
+                    <p class="itemNames">Match Day Non Veg Combo</p>
+                    <p class="itemDesc">Regular Pepper BBQ Chicken + Regular Chicken Sausage + Garlic Bread + Pepsi</p>
+                    <div class="priceBoxes"><p class="prices">₹529</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
+                </div>
+
+                <!-- Desserts  -->
+                <div id="item14" class="items filterDiv all desserts">
+                    <img src="Images/desserts1.jpeg" alt="Desserts" class="pizzaImages">
+                    <div class="markVeg">
+                        <div class="markCircleVeg"></div>
+                    </div>
+                    <p class="itemNames">Red Velvet Lava Cake</p>
+                    <p class="itemDesc">A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to give a burst of flavour in every bite!</p>
+                    <div class="priceBoxes"><p class="prices">₹139</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
+                </div>
+                    
+                <div id="item15" class="items filterDiv all desserts">
+                    <img src="Images/desserts2.jpeg" alt="Desserts" class="pizzaImages">
+                    <div class="markVeg">
+                        <div class="markCircleVeg"></div>
+                    </div>
+                    <p class="itemNames">Butterscotch Mousse Cake</p>
+                    <p class="itemDesc">Sweet temptation! Butterscotch flavored mousse</p>
+                    <div class="priceBoxes"><p class="prices">₹109</p></div>
+                    <div class="customiseBoxes"><p class="customise">CUSTOMISE</p></div>
+                    <img src="Images/Add to Cart Button.png" alt="add-to-cart" id="addToCart">
                 </div>
             </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-    
     <div id="bulk-page" class="bulk-order">
         <h1>Bulk Order</h1>
         <div id="box1">Details
