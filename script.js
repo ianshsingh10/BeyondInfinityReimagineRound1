@@ -242,6 +242,15 @@ tl.to("#text-2",{
     innerText:"DEALS",
 },'j')
 
+document.querySelectorAll(".box").addEventListener("mousemove",function(e){
+    document.querySelectorAll(".img").forEach((elem)=>{
+        const position=7;
+        var x=(window.innerWidth-e.clientX*position)/10;
+        var y=(window.innerWidth-e.clientY*position)/10;
+        elem.style.transform = `traslateX(${x}px) traslateY(${y}px)`;
+    })
+})
+
 filterSelection("all")
 function filterSelection(c) {
   var x, i;

@@ -24,12 +24,12 @@
                 <a href="#bulk-page" id="bulk" class="ele">Bulk Order</a>
                 <div class="animation start-home"></div>
             </div>
-            <div class="cart">
+            <a href="#" class="cart">
                 <i class="fa-solid fa-basket-shopping"></i>
-            </div>
-            <div class="profile">
+            </a>
+            <a href="#" class="profile">
                 <i class="fa-solid fa-user"></i>
-            </div>
+            </a>
         </div>
     </header>
     <div id="home-page">
@@ -43,33 +43,37 @@
             <div id="text-2" class="text">
                 DEALS
             </div>
-            <button class="order-now">
+            <a href="#menu-page"><button class="order-now">
                 Order Now
-            </button>
+            </button></a>
         </div>
     </div>
-    <!-- <div id="deal-page">
-        <h1>DEALS & OFFER</h1>
+    <div id="deal-page">
+        <h1 id="Heading">Deal & Offer</h1>
         <div class="deal-box">
-            <a href="#">
-                <img src="Images/up to.png" id="upto" class="img"></img>
+            <a class="img" href="#">
+                <img src="Images/up to.png" id="upto"></img>
             </a>
-            <a href="#">
-                <img src="Images/meal combo.png" id="meal-combo" class="img"></img>
-            </a>
-            <a href="#">
-                <img src="Images/family treat.png" id="family-treat" class="img"></img>
-            </a>
-            <a href="#">
-                <img src="Images/great value.png" id="great-value" class="img"></img>
-            </a>
-            <a href="#">
-                <div id="explore-all" class="img"></div>
-            </a>
+            <div class="box">
+                <a href="#">
+                    <img src="Images/meal combo.png" id="meal-combo" class="img"></img>
+                </a>
+                <a href="#">
+                    <img src="Images/family treat.png" id="family-treat" class="img"></img>
+                </a>
+                <div class="box">
+                    <a href="#">
+                    <img src="Images/great value.png" id="great-value" class="img"></img>
+                </a>
+                <a href="#">
+                    <div id="explore-all" class="img"></div>
+                </a>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </div>
     <div id="menu-page">
-        <h1 id="menuHeading">Menu</h1>
+        <h1 id="Heading">Menu</h1>
         <!-- Need to add effect for this side div -->
         <div class="left-side">
             <div id="sideDiv">
@@ -228,7 +232,7 @@
     </div>
 
     <div id="bulk-page" class="bulk-order">
-        <h1>Bulk Order</h1>
+        <h1 id="Heading">Bulk Order</h1>
         <div id="box1">Details
             <p id="details">
                 <input placeholder="Name">

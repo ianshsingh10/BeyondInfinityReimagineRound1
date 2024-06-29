@@ -157,53 +157,51 @@
     color: #FFFFFF;
 }
 #deal-page{
-    min-height: 100vmin;
-    padding: 10vmin;
+    padding: 5vmax;
+    padding-top: 10vh;
 }
 .deal-box{
-    position: absolute;
+    padding-top: 5vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap:2vmax;
 }
-.img{
-    position: absolute;
+.box{
+    width: 40vmax;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vmax;
 }
 #upto{
     width: 25vmax;
-    height: 100vmin;
-    padding-top: 10vmin;
-    padding-bottom: 10vmin;
 }
 #meal-combo{
-    left: 35vmax;
     width: 25vmax;
 }
 #family-treat{
-    left: 65vmax;
     width: 25vmax;
 }
 #great-value{
-    top: 50vmin;
-    left: 65vmin;
-    width: 50vmax;
+    width: 35vmax;
 }
 #explore-all{
-    width: 30vmin;
-    height: 8vmin;
+    width: 15vmax;
+    height: 5vmin;
     background-color: #006491;
 }
 #menu-page{
     width: 100%;
     min-height: 100vmax;
-    padding-top: 10vmin;
+    padding-top: 10vmax;
     padding-bottom: 10vmin;
     display: flex;
     flex-wrap: wrap;
 }
-
-
 #bgImage{
     height:50vmax;
     width: auto;
@@ -243,14 +241,12 @@
 }
 
 
-#menuHeading{
+#Heading{
     width: 100%;
     font-size: 4vmax;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000000;
     font-weight: bold;
-    top: 7vmax;
-    left: 0%;
 }
 #menuDiv{
     margin-left:2vmax;
@@ -373,10 +369,9 @@
     transition: 0.3s;
 }
 .bulk-order{
-    top:100vmax;
     width: 100%;
     height: auto;
-    padding: 10vh;
+    padding-top: 10vmax;
     padding-left: 5vw;
     padding-right: 5vw;
     align-items: center;
