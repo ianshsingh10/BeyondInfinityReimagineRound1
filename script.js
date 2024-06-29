@@ -1,3 +1,4 @@
+
 let lg=gsap.timeline({repeat:1});
 lg.to("#two",{
     y:'38px',
@@ -242,14 +243,14 @@ tl.to("#text-2",{
     innerText:"DEALS",
 },'j')
 
-document.querySelectorAll(".box").addEventListener("mousemove",function(e){
+document.addEventListener("mousemove",function(e){
     document.querySelectorAll(".img").forEach((elem)=>{
-        const position=7;
-        var x=(window.innerWidth-e.clientX*position)/10;
-        var y=(window.innerWidth-e.clientY*position)/10;
-        elem.style.transform = `traslateX(${x}px) traslateY(${y}px)`;
-    })
-})
+        const position=elem.getAttribute("value");
+        const x=(window.innerWidth-e.clientX*position)/30;
+        var y=(window.innerWidth-e.clientY*position)/70;
+        elem.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+});
 
 filterSelection("all")
 function filterSelection(c) {
