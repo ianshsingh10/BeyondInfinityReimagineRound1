@@ -18,48 +18,48 @@ a{
 }
 .logo{
     position: absolute;
-    left: 8vmax;
-    padding-top: 4vmin;
+    height: 10vmin;
+    left: 10vmin;
     width: 20vmax;
     line-height: 25px;
     font-family: Helvetica;
     font-size: max(2.5vmax,30px);
+    display: flex;
+    align-items: last baseline;
 }
 #one,#two{
-    height: 35px;
-    width: 35px;
+    height: 5vmin;
+    width:5vmin;
     scale: .8;
     z-index: 1;
     position: absolute;
     transform: rotate(-45deg);
 }
 #one{
-    top:-29px;
-    left:10px;
+    top:-6vmin;
 }
 #two{
-    top:-20px;
-    left:-35px;
+    top:-4.5vmin;
+    left:-6vmin;
 }
 .cover{
     width: 10vmax;
-    height: 110%;
+    height: 150%;
     position: absolute;
-    top: -1.5vw;
+    top: -2vmax;
     left:-10vmax;
     z-index: 0.5;
     background-color: white;
 }
 .brand-name{
-    position: relative;
-    left: -280px;
+    margin: 0;
+    padding-bottom: 1vmin;
     background-color: transparent;
 }
 .slider{
-    height: 3vmax;
+    height: max(3vmax,4vmin);
     width: 50vmax;
-    position: relative;
-    top:1vmax;
+    position: absolute;
     left: 50%;
     transform: translate(-45%);
     display: flex;
@@ -67,7 +67,7 @@ a{
     border-radius: 2vmax;
     background-color: #006491;
     border: 0.2vmax solid #006491;
-    box-shadow: #1b2a3198 0px 0.5vmax inset,#1b2a3198 0px 0.5vmax;
+    box-shadow: #1b2a3198 0px 0.3vmax inset,#1b2a3198 0px 0.3vmax;
     overflow: hidden;
 }
 .ele{
@@ -92,23 +92,24 @@ a{
     border-radius: 50px;
 }
 .nav{
+    display: none;
     position: absolute;
-    right: 20vmax;
-    font-size: 2vmax;
+    right: 21vmax;
+    font-size: 4vmin;
     color: #006491;
 }
 .cart{
     position: absolute;
     right: 13vmax;
-    font-size: 40px;
+    font-size: 5vmin;
     color: #E31837;
 }
 .profile{
     position: absolute;
     right: 5vmax;
-    width: 50px;
+    width: 6vmin;
     text-align: center;
-    font-size: 30px;
+    font-size: 4vmin;
     border-radius: 50%;
     color: white;
     background-color: #006491;
@@ -121,6 +122,7 @@ a{
     padding: 10vmin;
 }
 .landing{
+    position: relative;
     margin-top: 5vh;
     width: 100%;
     min-height: 80vmin;
@@ -158,7 +160,7 @@ a{
     border-radius: 30px;
     background-color: hsl(351, 81%, 49%);
     position: absolute;
-    left: 25vmax;
+    left: 15vmax;
     bottom: 10vmax;
     text-align: center;
     font-size: 3vmin;
@@ -289,7 +291,7 @@ a{
     width: 15vmax;
     background-color: #E31837;
     position: sticky;
-    top: 7vmax;
+    top: 0vmax;
     left: 0vmax;
     border-top-right-radius: 2vmax;
     border-bottom-right-radius: 2vmax;
@@ -592,5 +594,24 @@ button{
 @media screen and (max-width:1350px) {
     .text{
         width: 100%;
+    }
+    .order-now{
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 3%;
+    }
+}
+@media screen and (max-width:750px) {
+    .slider{
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+    .logo{
+        width: 30vmax;
+    }
+    .brand-name{
+        padding-bottom: 2vmin;
     }
 }

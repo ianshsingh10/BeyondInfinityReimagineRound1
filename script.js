@@ -1,25 +1,23 @@
 
-let lg=gsap.timeline({repeat:1});
+let lg=gsap.timeline({repeat:0});
 lg.to("#two",{
-    y:'38px',
+    y:'6.5vmin',
 })
 lg.to("#one",{
-    y:'28px',
-    x:'-26px',
+    y:'5.3vmin',
+    x:'-3.3vmin',
 })
 lg.to("#two",{
-    y:'56px',
-    x:'-18px',
+    y:'7.5vmin',
+    x:'-2vmin',
 },'a')
 lg.to("#one",{
-    y:'46px',
-    x:'-44px',
+    y:'6.3vmin',
+    x:'-5.3vmin',
 },'a')
-lg.to(".brand-name",{
-    x:'280px',
-    duration: 2,
+lg.from(".brand-name",{
+    x:'-30vmax',
 })
-
 let active="home";
 document.querySelectorAll(".ele").forEach((ele) => {
     let tl=gsap.timeline();
