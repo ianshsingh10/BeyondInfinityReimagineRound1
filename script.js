@@ -243,7 +243,7 @@ tl.to("#text-2",{
     innerText:"DEALS",
 },'j')
 
-document.addEventListener("mousemove",function(e){
+document.querySelector("#deal-page").addEventListener("mousemove",function(e){
     document.querySelectorAll(".img").forEach((elem)=>{
         const position=elem.getAttribute("value");
         const x=(window.innerWidth-e.clientX*position)/30;

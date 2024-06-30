@@ -118,7 +118,7 @@ a{
 }
 #home-page{
     width: 100%;
-    padding: 10vh;
+    padding: 10vmin;
 }
 .landing{
     margin-top: 5vh;
@@ -166,10 +166,9 @@ a{
 }
 #deal-page{
     padding: 5vmax;
-    padding-top: 10vh;
+    padding-top: 10vmin;
 }
 .deal-box{
-    padding-top: 5vmin;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,17 +183,83 @@ a{
     flex-wrap: wrap;
     gap: 2vmax;
 }
+.deal-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.deals{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
 #upto{
     width: 25vmax;
+}
+#upto-line1{    
+    top: 0;
+    color: #E31837;
+    font-size: 3vmax;
+}
+#upto-line2{
+    top: 5vmax;
+    color: #006491;
+    font-size: 2vmax;
 }
 #meal-combo{
     width: 25vmax;
 }
+#meal-combo-line1{    
+    top: 0;
+    color: #E31837;
+    font-size: 2vmax;
+    text-align: right;
+    padding-right: 10px;
+}
+#meal-combo-line2{
+    top: 2vmax;
+    color: #E31837;
+    font-size: 2vmax;
+    text-align: right;    
+    padding-right: 10px;
+}
 #family-treat{
     width: 25vmax;
 }
+#family-treat-line1{  
+    top: 1vmax;
+    left: 1vmax;
+    width: 13vmax;
+    color: #E31837;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 2vmax;
+    text-align: center;
+}
 #great-value{
     width: 35vmax;
+}
+#great-value-line1{
+    right: 1vmax;
+    bottom: 3vmax;
+    width: 15vmax;
+    color: white;
+    border-radius: 7px;   
+    background-color: #1689beaa;
+    font-size: 2vmax;
+    text-align: center;
+}
+#great-value-line2{  
+    right: 1vmax;
+    bottom: 0;
+    width: 20vmax;
+    color: white;
+    border-radius: 7px;   
+    background-color: #e31836a3;
+    font-size: 2vmax;
+    text-align: center;
 }
 #explore-all{
     width: 15vmax;
@@ -206,18 +271,17 @@ a{
     background-color: #006491;
 }
 #menu-page{
+    position: relative;
     width: 100%;
-    padding-top: 10vmax;
+    padding-top: 10vmin;
     padding-bottom: 10vmin;
     display: flex;
     flex-wrap: wrap;
 }
 #bgImage{
-    height:50vmax;
-    width: auto;
-    position: fixed;
-    top:6vmax;
-    right: 0vmax;
+    position: absolute;
+    top: 15vmax;
+    right: 0;
     z-index: -1;
 }
 
@@ -399,17 +463,25 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
-#box1{
+.blur{
     width:50vmin;
-    background-color: #87ceed;
+    background-image: url("Images/Group\ 35.png");
+    background-size: cover;
     border-radius: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    flex-grow: .2;
+}
+#box1{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
     padding-top: 5vmin;
     padding-bottom: 5vmin;
-    font-size: 20px;
-    flex-grow: .2;
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
 }
 #details{
     margin-top: 2vmin;
@@ -418,7 +490,7 @@ h1{
 input{
     width: 40vmin;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: transparent;
     color: #000000;
     padding-left: 8px;
     font-size: 2vmin;
@@ -428,7 +500,10 @@ input{
     margin-bottom: 2vmin;
     padding-top: 2px;
     padding-bottom: 2px;
-    border-color: #168ABE;
+    box-shadow: rgba(128, 128, 128, 0.7) 2px 2px inset,rgba(128, 128, 128, 0.7) 2px 2px;
+}
+::placeholder{
+    color: grey;
 }
 button{
     margin-top: 15px;
