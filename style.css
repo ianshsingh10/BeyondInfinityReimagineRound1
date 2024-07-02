@@ -347,8 +347,9 @@ a{
     position: absolute;
     object-fit: cover;
     top: 15vmax;
-    right: -30vmax;
+    right: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 #sideDiv{
@@ -549,12 +550,9 @@ a{
   }
 
 /* Track-order  */
-#track-order{
-    position: relative;
-    width: 100%;
+#track-page{
     padding-top: 10vmin;
-    padding-bottom: 10vmin;
-
+    position: relative;
 }
 #trackBG{
     width: 30%;
@@ -605,7 +603,7 @@ a{
 }
 #trackInputButton:hover{
     cursor: pointer;
-    opacity: 1;
+    opacity: .7;
     transition: 0.5s;
 }
 
