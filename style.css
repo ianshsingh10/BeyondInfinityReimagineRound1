@@ -12,16 +12,16 @@ a{
     width: 100vw;
     height: 10vmin;
     z-index: 5;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
-    box-shadow: #1b2a3160 0px 2px ;
+    backdrop-filter: blur(5px);
 }
 .logo{
     position: absolute;
     height: 10vmin;
     left: 10vmin;
     width: 20vmax;
-    line-height: 25px;
+    line-height: 30px;
     font-family: Helvetica;
     font-size: max(2.5vmax,30px);
     display: flex;
@@ -49,12 +49,14 @@ a{
     top: -2vmax;
     left:-10vmax;
     z-index: 0.5;
-    background-color: white;
+    background-color: transparent;
 }
 .brand-name{
     margin: 0;
     padding-bottom: 1vmin;
     background-color: transparent;
+    font-weight: bold;
+    overflow: hidden;
 }
 .slider{
     height: max(3vmax,4vmin);
@@ -70,6 +72,7 @@ a{
     box-shadow: #1b2a3198 0px 0.3vmax inset,#1b2a3198 0px 0.3vmax;
     overflow: hidden;
 }
+
 .ele{
     position: relative;
     width: 10vmax;
@@ -92,6 +95,7 @@ a{
     border-radius: 50px;
 }
 .nav{
+    cursor: pointer;
     display: none;
     position: absolute;
     right: 21vmax;
@@ -113,6 +117,65 @@ a{
     border-radius: 50%;
     color: white;
     background-color: #006491;
+}
+.navDiv{
+    padding-top: 10vmin;
+    z-index: 3;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+.slider-2{
+    height: max(3vmax,4vmin);
+    width: 50vmax;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 2vmax;
+    background-color: #006491;
+    border: 0.2vmax solid #006491;
+    box-shadow: #1b2a3198 0px 0.3vmax inset,#1b2a3198 0px 0.3vmax;
+    overflow: hidden;
+}
+#profile-page{
+    padding-top: 10vmin;
+    z-index: 3;
+    position: fixed;
+    right: 0;
+}
+.profileText{
+    font-size: 1.5vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    left:1vmax;
+    padding-top: 0.8vmax;
+}
+#profileDiv{
+    padding-top: 5vmin;
+    padding-bottom: 15vmin;
+    width: 20vmax;
+    height: 88vh;
+    background-color: #E31837;
+    position: sticky;
+    top: 10vmin;
+    right: 0vmax;
+    border-top-left-radius: 2vmax;
+    border-bottom-left-radius: 2vmax;
+    box-shadow: 0.4vmax 0.4vmax 1vmax 0.1vmax #000000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.profileText:hover{
+    cursor: pointer;
+    color: #000000;
+    transition: 0.5s;
+}
+#cross{
+    text-align: end;
+    padding-right: 6vmin;
 }
 .fa-user{
     background-color: #006491;
@@ -160,8 +223,8 @@ a{
     border-radius: 30px;
     background-color: hsl(351, 81%, 49%);
     position: absolute;
-    left: 15vmax;
-    bottom: 10vmax;
+    left: 10vmax;
+    bottom: 5vmax;
     text-align: center;
     font-size: 3vmin;
     color: #FFFFFF;
@@ -282,8 +345,9 @@ a{
 }
 #bgImage{
     position: absolute;
+    object-fit: cover;
     top: 15vmax;
-    right: 0;
+    right: -30vmax;
     z-index: -1;
 }
 
@@ -291,7 +355,7 @@ a{
     width: 15vmax;
     background-color: #E31837;
     position: sticky;
-    top: 0vmax;
+    top: 7vmax;
     left: 0vmax;
     border-top-right-radius: 2vmax;
     border-bottom-right-radius: 2vmax;
@@ -307,7 +371,7 @@ a{
     font-weight: bold;
     position: relative;
     left:1vmax;
-    padding: 1vmax;
+    padding-top: 0.7vmax;
 }
 
 .sideText:hover{
@@ -327,7 +391,7 @@ a{
 }
 #menuDiv{
     margin-left:2vmax;
-    width: 40vmax;
+    width: 20vmax;
     flex-grow: 1;
 }
 #menuItems{
@@ -467,7 +531,7 @@ h1{
 }
 .blur{
     width:50vmin;
-    background-image: url("Images/Group\ 35.png");
+    background-image: url("Images/up\ to.png");
     background-size: cover;
     border-radius: 30px;
     text-align: center;
@@ -483,7 +547,8 @@ h1{
     padding-bottom: 5vmin;
     border-radius: 30px;
     background-color: transparent;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
 }
 #details{
     margin-top: 2vmin;
@@ -492,7 +557,7 @@ h1{
 input{
     width: 40vmin;
     border-radius: 6px;
-    background-color: transparent;
+    background-color: #168ABE;
     color: #000000;
     padding-left: 8px;
     font-size: 2vmin;
@@ -502,10 +567,12 @@ input{
     margin-bottom: 2vmin;
     padding-top: 2px;
     padding-bottom: 2px;
-    box-shadow: rgba(128, 128, 128, 0.7) 2px 2px inset,rgba(128, 128, 128, 0.7) 2px 2px;
+    border: 2px solid #006491;
+    box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 0.70), 2px 3px 3px 0px rgba(0, 0, 0, 0.50) inset;
 }
 ::placeholder{
-    color: grey;
+    color: white;
+    opacity: 0.7;
 }
 button{
     margin-top: 15px;
@@ -590,7 +657,9 @@ button{
     font-size: 1.5vmax;
     line-height: 1vmax;
 }
-
+.hidden{
+    display: none;
+}
 @media screen and (max-width:1350px) {
     .text{
         width: 100%;
@@ -601,7 +670,7 @@ button{
         bottom: 3%;
     }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:920px) {
     .slider{
         display: none;
     }
@@ -609,9 +678,67 @@ button{
         display: block;
     }
     .logo{
-        width: 30vmax;
+        width: 50vmax;
     }
     .brand-name{
         padding-bottom: 2vmin;
+        font-size: 6vmin;
+        line-height: 4.5vmin;
     }
+    #home-page{
+        padding-top: 15vmin;
+    }
+    #deal-page{
+        padding-top: 15vmin;
+    }
+    #menu-page{
+        padding-top: 15vmin;
+    }
+    #track-page{
+        padding-top: 15vmin;
+    }
+    #bulk-page{
+        padding-top: 15vmin;
+    }
+    .nav{
+        right: 30vmin;
+    }
+    .cart{
+        right: 20vmin;
+    }
+    .profile{
+        right: 10vmin;
+    }
+    #profileDiv{
+        padding: 15vmin;
+        text-align: center;
+        width: 100vw;
+        height: 95vh;
+        background-color: #E31837;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .profileText{
+        font-size: 3vmin;
+    }
+}
+@media screen and (min-width:920px){
+    .slider-2{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    .slider-2{
+        display: none;
+    }
+    .brand-name{
+        padding-bottom: .5vmin;
+        font-size: 7vmin;
+        line-height: 6vmin;
+    }
+}
+@media screen and (max-width:500px){
+    
 }

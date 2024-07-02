@@ -1,5 +1,5 @@
 
-let lg=gsap.timeline({repeat:0});
+let lg=gsap.timeline({repeat:1});
 lg.to("#two",{
     y:'6.5vmin',
 })
@@ -16,7 +16,8 @@ lg.to("#one",{
     x:'-5.3vmin',
 },'a')
 lg.from(".brand-name",{
-    x:'-30vmax',
+    x:'-60vmin',
+    duration: 1,
 })
 let active="home";
 document.querySelectorAll(".ele").forEach((ele) => {
@@ -80,7 +81,6 @@ document.querySelectorAll(".ele").forEach((ele) => {
 document.querySelectorAll(".ele").forEach((ele) =>{
     ele.addEventListener("click",()=>{
     active=ele.getAttribute("id");
-    console.log(active);
     if(active=="home"){
         leave="home";
         tl.to(".animation",{
@@ -115,12 +115,12 @@ tl.from("#image",{
     rotate: -360,
 },'b')
 tl.fromTo("#text-1",{
-    x:'50vmin',
+    x:'60vmin',
 },{
     x:'-5vmin',
 },'b')
 tl.fromTo("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
 },{
     x:'5vmin',
 },'b')
@@ -136,7 +136,7 @@ tl.to("#text-1",{
     delay:2,
 },'c')
 tl.to("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
     duration:1,
     delay:2,
 },'c')
@@ -163,7 +163,7 @@ tl.fromTo("#text-1",{
     x:'-5vmin',
 },'e')
 tl.fromTo("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
 },{
     x:'5vmin',
 },'e')
@@ -179,7 +179,7 @@ tl.to("#text-1",{
     delay:2,
 },'f')
 tl.to("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
     duration:1,
     delay:2,
 },'f')
@@ -201,12 +201,12 @@ tl.to("#image",{
     rotate: -360,
 },'h')
 tl.fromTo("#text-1",{
-    x:'50vmin',
+    x:'60vmin',
 },{
     x:'-5vmin',
 },'h')
 tl.fromTo("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
 },{
     x:'5vmin',
 },'h')
@@ -217,12 +217,12 @@ tl.to("#text-2",{
     x:'0vmin',
 },'i')
 tl.to("#text-1",{
-    x:'50vmin',
+    x:'60vmin',
     duration:1,
     delay:2,
 },'i')
 tl.to("#text-2",{
-    x:'-50vmin',
+    x:'-60vmin',
     duration:1,
     delay:2,
 },'i')
@@ -235,11 +235,32 @@ tl.to("#image",{
     duration:0,
 },'j')
 tl.to("#text-1",{
-    innerText:"GRAET",
+    innerText:"GREAT",
 },'j')
 tl.to("#text-2",{
     innerText:"DEALS",
 },'j')
+
+document.querySelector(".profile").addEventListener("click",function(){
+    document.querySelector("#profile-page").classList.remove("hidden");
+});
+
+document.querySelector("#cross").addEventListener("click",function(){
+    document.querySelector("#profile-page").classList.add("hidden");
+});
+
+document.querySelector("#nav2").addEventListener("click",function(){
+    document.querySelector(".navDiv").classList.remove("hidden");
+    document.querySelector("#nav2").classList.add("hidden");
+    document.querySelector("#cross2").classList.remove("hidden");
+});
+
+document.querySelector("#cross2").addEventListener("click",function(){
+    document.querySelector(".navDiv").classList.add("hidden");
+    document.querySelector("#nav2").classList.remove("hidden");
+    document.querySelector("#cross2").classList.add("hidden");
+});
+
 
 document.querySelector("#deal-page").addEventListener("mousemove",function(e){
     document.querySelectorAll(".img").forEach((elem)=>{
@@ -297,3 +318,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+

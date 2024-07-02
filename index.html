@@ -7,34 +7,58 @@
     <link href="style.css" rel="stylesheet">
     <title>Domino's Pizza</title>
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <img id="two" src="Images/two dots.png">
-                <img id="one" src="Images/one dot.jpg">
-                <p class="brand-name">Domino's Pizza</p>
-                <div class="cover"></div>
-            </div>
-            <div class="slider">
-                <a href="#home-page" id="home" class="ele">Home</a>
-                <a href="#deal-page" id="deals" class="ele">Deals & Offer</a>
-                <a href="#menu-page" id="menu" class="ele">Menu</a>
-                <a href="#track-page" id="track" class="ele">Track Order</a>
-                <a href="#bulk-page" id="bulk" class="ele">Bulk Order</a>
-                <div class="animation start-home"></div>
-            </div>
-            <a href="#" class="nav">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <a href="#" class="cart">
-                <i class="fa-solid fa-basket-shopping"></i>
-            </a>
-            <a href="#" class="profile">
-                <i class="fa-solid fa-user"></i>
-            </a>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img id="two" src="Images/two dots.png">
+            <img id="one" src="Images/one dot.jpg">
+            <p class="brand-name">Domino's Pizza</p>
+            <div class="cover"></div>
         </div>
-    </header>
+        <div class="slider">
+            <a href="#home-page" id="home" class="ele">Home</a>
+            <a href="#deal-page" id="deals" class="ele">Deals & Offer</a>
+            <a href="#menu-page" id="menu" class="ele">Menu</a>
+            <a href="#track-page" id="track" class="ele">Track Order</a>
+            <a href="#bulk-page" id="bulk" class="ele">Bulk Order</a>
+            <div class="animation start-home"></div>
+        </div>
+        <div class="nav">
+            <div id="nav2"><i class="fa-solid fa-bars"></i></div>
+            <div class="hidden" id="cross2"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <a href="#" class="cart">
+            <i class="fa-solid fa-basket-shopping"></i>
+        </a>
+        <a href="#" class="profile">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </div>
+</header>
+<body>
+    <div id="profile-page" class="hidden">
+        <div id="profileDiv">
+            <p class="profileText" id="cross"><i class="fa-solid fa-xmark"></i></p>
+            <p class="profileText" id="profile" >Profile</p>
+            <p class="profileText" id="myOrders">My Orders</p>
+            <p class="profileText" id="savedAddresses" >Saved Addresses</p>
+            <p class="profileText" id="feedback">Feedback</p>
+            <p class="profileText" id="terms&conditions" >Terms & Conditions</p>
+            <p class="profileText" id="dominosStores" >Domino's Stores</p>
+            <p class="profileText" id="giftCards" >Gift Cards</p>
+            <p class="profileText" id="contact" >Contact</p>
+        </div>
+    </div>
+    <div class="navDiv hidden">
+        <div class="slider-2">
+            <a href="#home-page" id="home" class="ele">Home</a>
+            <a href="#deal-page" id="deals" class="ele">Deals & Offer</a>
+            <a href="#menu-page" id="menu" class="ele">Menu</a>
+            <a href="#track-page" id="track" class="ele">Track Order</a>
+            <a href="#bulk-page" id="bulk" class="ele">Bulk Order</a>
+            <div class="animation start-home"></div>
+        </div>
+    </div>
     <div id="home-page">
         <div class="landing">
             <div id="text-1" class="text">
