@@ -1,5 +1,43 @@
+let load=gsap.timeline();
+load.to("#two2",{
+    opacity:1,
+})
+load.to("#one1",{
+    opacity:1,
+})
+load.from("#two2",{
+    y:'-20vmin',
+})
+load.from("#one1",{
+    y:'-15.3vmin',
+    x:'13.3vmin',
+})
+load.to("#two2",{
+    x:'-30vmin',
+},'x')
+load.to("#one1",{
+    x:'-30vmin',
+},'x')
+load.from(".cover1",{
+    x:'75vmin',
+    duration:.2,
+},'x')
+load.to(".brand-name1",{
+    opacity:1,
+},'x')
+load.from(".brand-name1",{
+    x:'-75vmin',
+    duration: 1,
+},'x')
+load.to(".loader",{
+    opacity:0,
+})
+load.to(".main",{
+    opacity:1,
+})
 
-let lg=gsap.timeline({repeat:1});
+
+let lg=gsap.timeline({repeat:2});
 lg.to("#two",{
     y:'6.5vmin',
 })

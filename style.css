@@ -6,6 +6,59 @@ a{
     text-decoration: none;
     color: white;
 }
+.loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loaderDiv{
+    position: relative;
+}
+#one1,#two2{
+    opacity: 0;
+    height: 10vmin;
+    width:10vmin;
+    scale: .8;
+    z-index: 1;
+    position: absolute;
+    transform:  rotate(-45deg);
+}
+#one1{
+    top:-4vmin;
+    left:32.8vmin;
+}
+#two2{
+    top:1.6vmin;
+    left:27.2vmin;
+}
+.cover1{
+    width: 150vmin;
+    height: 150%;
+    position: absolute;
+    top: -2vmax;
+    left:-140vmin;
+    z-index: 0.5;
+    background-color: black;
+}
+.brand-name1{
+    opacity: 0;
+    padding-left: 12vmin;
+    margin: 0;
+    color: white;
+    font-size: 10vmin;
+    padding-bottom: 1vmin;
+    background-color: transparent;
+    font-weight: bold;
+    overflow: hidden;
+}
+.main{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
 .navbar{
     position: fixed;
     top: 0;
@@ -728,7 +781,7 @@ input{
     padding-top: 2px;
     padding-bottom: 2px;
     border: 2px solid #006491;
-    box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 0.70), 2px 3px 3px 0px rgba(0, 0, 0, 0.50) inset;
+    box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 1), 2px 3px 3px 0px rgba(0, 0, 0, 0.50) inset;
 }
 ::placeholder{
     color: white;
@@ -745,6 +798,12 @@ button{
     font-weight: bold;
     font-size: 18px;
 }
+button:hover{
+    margin-top: 10px;
+    margin-bottom: 6px;
+    box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 1);
+
+}
 .left-box{
     max-width:100vmin;
     display: flex;
@@ -760,13 +819,15 @@ button{
 }
 #content{
     width:100%;
+    font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 #line3{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 #box3{
     width: 75vmin;
@@ -784,10 +845,10 @@ button{
     flex-grow: 1;
 }
 #line4{
+    margin-top: 10px;
     background-color: #FFFFFF;
-    height: 100px;
-    width: 170px;
-    font-size: 14px;
+    width: 100%;
+    font-size: 17px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
