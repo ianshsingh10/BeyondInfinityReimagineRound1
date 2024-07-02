@@ -319,5 +319,29 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+function start(){
+    
+    document.getElementById("circle1").style.backgroundColor = "blue";
+    setTimeout(() => {
+        document.getElementById("trackLine1").style.backgroundColor = "blue";
+    }, 1000);
+    setTimeout(() => {
+        document.getElementById("circle2").style.backgroundColor = "blue";
+    }, 1000);
+    setTimeout(() => {
+        document.getElementById("circle3").style.backgroundColor = "blue";
+    }, 2000);
+    setTimeout(() => {
+        document.getElementById("circle4").style.backgroundColor = "blue";
+    }, 3000);
+    setTimeout(() => {
+        document.getElementById("circle5").style.backgroundColor = "blue";
+    }, 4000);
+    setTimeout(() => {
+        document.getElementById("circle6").style.backgroundColor = "blue";
+        document.getElementById("greenFlag").style.opacity = 1;
+        document.getElementById("redFlag").style.opacity = 0;
 
-
+    }, 5000);
+    
+}
