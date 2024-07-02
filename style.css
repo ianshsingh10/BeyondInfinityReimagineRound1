@@ -509,6 +509,168 @@ a{
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+.markVeg {
+    width: 1vmax;
+    height: 1vmax;
+    border: 0.15vmax solid green;
+    position: absolute;
+    left:0.4vmax;
+    top:0.3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .markCircleVeg {
+    width: 0.8vmax;
+    height: 0.8vmax;
+    background-color: green;
+    border-radius: 50%;
+  }
+
+  .markNonVeg {
+    width: 1vmax;
+    height: 1vmax;
+    border: 0.15vmax solid red;
+    position: absolute;
+    left:0.4vmax;
+    top:0.3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .markCircleNonVeg {
+    width: 0.8vmax;
+    height: 0.8vmax;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+/* Track-order  */
+#track-order{
+    position: relative;
+    width: 100%;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
+
+}
+#trackBG{
+    width: 30%;
+    height: auto;
+    position: relative;
+    top: -20vmax;
+    left: 30vmax;
+}
+
+#mapTrack{
+    position: relative;
+    top: -20vmax;
+    left: 20vmax;
+    width: 45vmax;
+    height: auto;
+}
+
+#trackInput{
+    position: relative;
+    left:4vmax;
+    top:0vmax;
+    width: 30%;
+    height: 3vmax;
+    border-radius: 2vmax;
+    color:black;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    font-size: 1vmax;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+#trackInputButton{
+    position: relative;
+    background-color: rgb(136, 11, 11);
+    border-radius: 2vmax;
+    left: 5vmax;
+    top:0.5vmax;
+    z-index: 1vmax;
+    width: 15vmax;
+    height: 3vmax;
+    font-size: 2vmax;
+    font-weight: sbold;
+    margin-top: 10px;
+    opacity: 1;
+}
+#trackInputButton:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#trackBar{
+    position: relative;
+    top:5vmax;
+    left:-40vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redFlag{
+    position: relative;
+    height: 3vmax;
+    width: auto;
+    top:8vmax;
+    left:-25vmax;
+}
+
+#greenFlag{
+    position: relative;
+    height: 3vmax;
+    width: auto;
+    top:-12vmax;
+    left:5vmax;
+    transition: 1s;
+    opacity: 0;
+}
+
+.trackCircle{
+    width: 2vmax;
+    height: 2vmax;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.7s;
+    font-size: 1vmax;
+    font-weight:bold ;
+}
+
+.trackLine{
+    width: 0.2vmax;
+    height: 2vmax;
+    background-color: grey;
+    position: relative;
+    transition: 0.7s;
+}
+
+#trackList {
+    position: relative;
+    top: -16vmax;
+    left: -35vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .trackText{
+    position: relative;
+    left:3vmax;
+    width: 10vmax;
+  }
+
 .bulk-order{
     width: 100%;
     height: auto;
