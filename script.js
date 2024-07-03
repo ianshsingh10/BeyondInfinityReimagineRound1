@@ -27,14 +27,16 @@ load.to(".brand-name1",{
 },'x')
 load.from(".brand-name1",{
     x:'-75vmin',
-    duration: 1,
+    duration: 1.5,
 },'x')
 load.to(".loader",{
+    delay:.3,
     opacity:0,
 })
-load.to(".main",{
-    opacity:1,
+load.from(".main",{
+    opacity:0,
 })
+
 
 
 let lg=gsap.timeline({repeat:2});
@@ -279,6 +281,7 @@ tl.to("#text-2",{
     innerText:"DEALS",
 },'j')
 
+
 document.querySelector(".profile").addEventListener("click",function(){
     document.querySelector("#profile-page").classList.remove("hidden");
 });
@@ -299,15 +302,35 @@ document.querySelector("#cross2").addEventListener("click",function(){
     document.querySelector("#cross2").classList.add("hidden");
 });
 
+var cursor=document.querySelector(".cursor"),
+    mouseX=0,
+    mouseY=0
 
+gsap.to({},{
+    repeat:-1,
+    onrepeat:function(){
+        gsap.set(cursor,{
+            css:{
+                left: mouseX,
+                top: mouseY,
+            }
+        })
+    }
+});
 document.querySelector("#deal-page").addEventListener("mousemove",function(e){
+    mouseX=e.clientX;
+    mouseY=e.clientY;
     document.querySelectorAll(".img").forEach((elem)=>{
         const position=elem.getAttribute("value");
         const x=(window.innerWidth-e.clientX*position)/30;
         var y=(window.innerWidth-e.clientY*position)/70;
         elem.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
+    const posX=e.clientX;
+    const posY=e.clientY;
+    cursor.style.cssText="left: "+`${posX-40}px;top: `+`${posY-15}px`;
 });
+
 
 filterSelection("all")
 function filterSelection(c) {
@@ -383,3 +406,56 @@ function start(){
     }, 5000);
     
 }
+
+var deal=gsap.timeline({scrollTrigger:{
+    trigger:"#deal-page",
+    start:"-20% 50%",
+    end:"45% 50%",
+    scrub:"true",
+}});
+
+deal.from("#deal-heading",{
+    y:"-50px",
+    opacity:0,
+},)
+deal.from(".upTo",{
+    x:"-100px",
+    opacity:0,
+},'deal')
+deal.from(".mealCombo",{
+    y:"-50px",
+    opacity:0,
+},'deal')
+deal.from(".familyTreat",{
+    x:"100px",
+    opacity:0,
+},'deal')
+deal.from(".greatValue",{
+    y:"100px",
+    opacity:0,
+    delay:.3,
+},'de')
+deal.from("#explore-all",{
+    x:"100px",
+    opacity:0,
+    delay:.3,
+},'de')
+
+var menu=gsap.timeline({scrollTrigger:{
+    trigger:"#menu-page",
+    start:"-10% 50%",
+    end:"15% 50%",
+    scrub:"true",
+}});
+menu.from("#menu-heading",{
+    y:"-50px",
+    opacity:0,
+},)
+menu.from("#sideDiv",{
+    x:"-50px",
+    opacity:0,
+},)
+menu.from(".items",{
+    y:"-50px",
+    opacity:0,
+})

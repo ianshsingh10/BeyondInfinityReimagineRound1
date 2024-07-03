@@ -85,10 +85,10 @@
             </div>
         </div>
         <div id="deal-page">
-            <h1 id="Heading">Deal & Offer</h1>
+            <h1 id="deal-heading" class="Heading">Deal & Offer</h1>
             <div class="deal-box">
                 <div value="2" class="img">
-                    <a class="deal-links" href="#">
+                    <a class="deal-links upTo" href="#">
                         <p id="upto-line1" class="deals">Upto 50%</p>
                         <p id="upto-line2" class="deals">1st-5th July</p>
                         <img src="Images/up to.png" id="upto"></img>
@@ -96,20 +96,20 @@
                 </div>
                 <div class="box">
                     <div value="3" class="img" >
-                        <a class="deal-links" href="#">
+                        <a class="deal-links mealCombo" href="#">
                             <p id="meal-combo-line1" class="deals">Meal Combo</p>
                             <p id="meal-combo-line2" class="deals">Offer</p>
                             <img src="Images/meal combo.png" id="meal-combo"></img>
                         </a>
                     </div>
                     <div value="1.5" class="img">
-                        <a class="deal-links" href="#">
+                        <a class="deal-links familyTreat" href="#">
                             <p id="family-treat-line1" class="deals">Family Treat</p>
                             <img src="Images/family treat.png" id="family-treat"></img>
                         </a>
                     </div>
                     <div value="2" class="img">
-                        <a class="deal-links" href="#">
+                        <a class="deal-links greatValue" href="#">
                             <p id="great-value-line1" class="deals">Starting @99</p>                        
                             <p id="great-value-line2" class="deals">Great Value Offer</p>
                             <img src="Images/great value.png" id="great-value"></img>
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div id="menu-page">
-            <h1 id="Heading">Menu</h1>
+            <h1 id="menu-heading" class="Heading">Menu</h1>
             <!-- Need to add effect for this side div -->
             <div class="left-side">
                 <div id="sideDiv">
@@ -282,32 +282,36 @@
         </div>
     
         <div id="track-page">
-            <h1 id="Heading">Track Order</h1>
-            <input type="name" placeholder="Tracking Id" id="trackInput" required><button id="trackInputButton"  onclick="start()">Track Now</button>
-            <img src="Images/redFlag.png" alt="red-flag" id="redFlag">
-            <div id="trackBar">
-                <span id="circle1"  class="trackCircle"><p class="trackText">Order placed</p></span>
-                <span id="trackline1" class="trackLine"></span>
-                <span id="circle2"  class="trackCircle"><p class="trackText">Preparing</p></span>
-                <span id="trackline2" class="trackLine"></span>
-                <span id="circle3" class="trackCircle"><p class="trackText">Baking</p></span>
-                <span id="trackline3" class="trackLine"></span>
-                <span id="circle4" class="trackCircle"><p class="trackText">Quality Checking</p></span>
-                <span id="trackline4" class="trackLine"></span>
-                <span id="circle5" class="trackCircle"><p class="trackText">Out for Delivery</p></span>
-                <span id="trackline5" class="trackLine"></span>
-                <span id="circle6" class="trackCircle"><p class="trackText">Delievered</p></span>
+            <h1 class="Heading">Track Order</h1>
+            <div class="trackLeftDiv">
+                <input type="name" placeholder="Tracking Id" id="trackInput" required><button id="trackInputButton"  onclick="start()">Track Now</button>
+                <div class="track">
+                    <div class="flags">
+                        <img src="Images/redFlag.png" alt="red-flag" id="redFlag">    
+                        <img src="Images/greenFlag.png" alt="green-flag" id="greenFlag">
+                    </div>
+                    <div id="trackBar">
+                        <span id="circle1"  class="trackCircle"><p class="trackText">Order placed</p></span>
+                        <span id="trackline1" class="trackLine"></span>
+                        <span id="circle2"  class="trackCircle"><p class="trackText">Preparing</p></span>
+                        <span id="trackline2" class="trackLine"></span>
+                        <span id="circle3" class="trackCircle"><p class="trackText">Baking</p></span>
+                        <span id="trackline3" class="trackLine"></span>
+                        <span id="circle4" class="trackCircle"><p class="trackText">Quality Checking</p></span>
+                        <span id="trackline4" class="trackLine"></span>
+                        <span id="circle5" class="trackCircle"><p class="trackText">Out for Delivery</p></span>
+                        <span id="trackline5" class="trackLine"></span>
+                        <span id="circle6" class="trackCircle"><p class="trackText">Delievered</p></span>
+                    </div>
+                    <div class="bg">
+                        <img src="Images/track-pizza.png" alt="BG" id="trackBG">
+                    </div>
+                </div>
             </div>
-    
-            <img src="Images/greenFlag.png" alt="green-flag" id="greenFlag">
-    
-            <img src="Images/track-pizza.png" alt="BG" id="trackBG">
             <img src="Images/map.png" alt="map" id="mapTrack">
-    
-    
         </div>
         <div id="bulk-page" class="bulk-order">
-            <h1 id="Heading">Bulk Order</h1>
+            <h1 class="Heading">Bulk Order</h1>
             <div class="blur">
                 <div id="box1">Details
                     <p id="details">
