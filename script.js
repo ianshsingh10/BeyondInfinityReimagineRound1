@@ -33,8 +33,8 @@ load.to(".loader",{
     delay:.3,
     opacity:0,
 })
-load.from(".main",{
-    opacity:0,
+load.to(".main",{
+    opacity:1,
 })
 
 
