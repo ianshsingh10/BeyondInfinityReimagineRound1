@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/favicon1.png">
     <title>Domino's Pizza</title>
 </head>
 <body>
@@ -282,7 +283,7 @@
         </div>
     
         <div id="track-page">
-            <h1 class="Heading">Track Order</h1>
+            <h1 id="track-heading" class="Heading">Track Order</h1>
             <div class="trackLeftDiv">
                 <input type="name" placeholder="Tracking Id" id="trackInput" required><button id="trackInputButton"  onclick="start()">Track Now</button>
                 <div class="track">
@@ -311,7 +312,7 @@
             <img src="Images/map.png" alt="map" id="mapTrack">
         </div>
         <div id="bulk-page" class="bulk-order">
-            <h1 class="Heading">Bulk Order</h1>
+            <h1 id="bulk-heading" class="Heading">Bulk Order</h1>
             <div class="blur">
                 <div id="box1">Details
                     <p id="details">
@@ -390,7 +391,18 @@
                 <p class="listItems">Privacy Policy</p>
             </div>
             <div class="lower-box">
-                <h3 class="footerTitle">Social</h3>
+                <div class="socialBox">
+                    <div class="social">
+                        <h3 class="footerTitle">Social</h3>
+                        <p class="listItems"><i class="fa-brands fa-instagram"></i></p>
+                        <br>
+                    </div>
+                    <div class="social">
+                        <h3 class="footerTitle">Available On:</h3>
+                        <p><img src="Images/app_store.png" alt=""></p>
+                        <p><img src="Images/play_store.png" alt=""></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -400,6 +412,6 @@
     <script src="https://kit.fontawesome.com/ad84b356b0.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
- 
+
 </body>
 </html>

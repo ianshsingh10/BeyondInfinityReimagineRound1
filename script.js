@@ -1,3 +1,4 @@
+
 let load=gsap.timeline();
 load.to("#two2",{
     opacity:1,
@@ -33,11 +34,10 @@ load.to(".loader",{
     delay:.3,
     opacity:0,
 })
+
 load.to(".main",{
     opacity:1,
 })
-
-
 
 let lg=gsap.timeline({repeat:2});
 lg.to("#two",{
@@ -459,3 +459,67 @@ menu.from(".items",{
     y:"-50px",
     opacity:0,
 })
+
+var track=gsap.timeline({scrollTrigger:{
+    trigger:"#track-page",
+    start:"-10% 50%",
+    end:"25% 50%",
+    scrub:"true",
+}});
+track.from("#track-heading",{
+    y:"-50px",
+    opacity:0,
+},)
+track.from("#trackInput",{
+    x:"-50px",
+    opacity:0,
+},'track')
+track.from("#trackInputButton",{
+    x:"-100px",
+    opacity:0,
+    delay:.1,
+},'track')
+track.from("#mapTrack",{
+    x:"50px",
+    opacity:0,
+},'track')
+track.from("#trackBar",{
+    y:"-100px",
+    opacity:0,
+},'tra')
+track.from("#trackBG",{
+    x:"100px",
+    opacity:0,
+},'tra')
+
+var bulk=gsap.timeline({scrollTrigger:{
+    trigger:"#bulk-page",
+    start:"-10% 50%",
+    end:"35% 50%",
+    scrub:"true",
+}});
+bulk.from("#bluk-heading",{
+    y:"-50px",
+    opacity:0,
+},)
+bulk.from(".blur",{
+    x:"-50px",
+    opacity:0,
+},'bulk')
+bulk.from("#box2",{
+    x:"100px",
+    opacity:0,
+},'bulk')
+bulk.from("#content",{
+    x:"-50px",
+    opacity:0,
+},'bulk')
+bulk.from("#box3",{
+    x:"100px",
+    opacity:0,
+},'bul')
+bulk.from("#content2",{
+    x:"-50px",
+    opacity:0,
+},'bul')
+

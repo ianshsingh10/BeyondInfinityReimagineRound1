@@ -8,7 +8,7 @@ a{
 }
 .loader{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -16,6 +16,11 @@ a{
 }
 .loaderDiv{
     position: relative;
+}
+.load-animation{
+    width: 100%;
+    height: 50vw;
+    opacity: 1;
 }
 #one1,#two2{
     opacity: 0;
@@ -240,7 +245,6 @@ a{
 .landing{
     position: relative;
     margin-top: 5vh;
-    width: 100%;
     min-height: 80vmin;
     border-radius: 40px;
     display: flex;
@@ -639,8 +643,9 @@ a{
 }
 
 #trackInputButton{
+    color: white;
     position: relative;
-    background-color: rgb(136, 11, 11);
+    background-color: #E31837;
     border-radius: 2vmax;
     width: 20%;
     height: 3vmax;
@@ -651,7 +656,6 @@ a{
 }
 #trackInputButton:hover{
     cursor: pointer;
-    opacity: .7;
     transition: 0.5s;
 }
 
@@ -695,7 +699,7 @@ a{
 .trackCircle{
     width: 2vmax;
     height: 2vmax;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.664);
     border-radius: 50%;
     transition: 0.7s;
     font-size: 1vmax;
@@ -705,7 +709,7 @@ a{
 .trackLine{
     width: 0.2vmax;
     height: 2vmax;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.664);
     transition: 0.7s;
 }
 
@@ -726,18 +730,12 @@ a{
 }
 
 .bulk-order{
-    width: 100%;
-    height: auto;
-    padding-top: 10vmax;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    align-items: center;
+    padding: 5vmin;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
-    padding-top: 10vmin;
-    padding-bottom: 10vmin;
+    justify-content: center;
 }
 h1{
     width: 100%;
@@ -786,7 +784,7 @@ input{
     border: 2px solid #006491;
     box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 1), 2px 3px 3px 0px rgba(0, 0, 0, 0.50) inset;
 }
-::placeholder{
+#input::placeholder{
     color: white;
     opacity: 0.7;
 }
@@ -808,6 +806,7 @@ button:hover{
 
 }
 .left-box{
+    padding: 2vmin;
     max-width:100vmin;
     display: flex;
     flex-wrap: wrap;
@@ -833,7 +832,7 @@ button:hover{
     margin-bottom: 15px;
 }
 #box3{
-    width: 75vmin;
+    width: 70vmin;
     height: 35vmin;
     background-image:url("Images/image\ 3\ \(1\).jpg") ;
     background-size: cover;
@@ -881,6 +880,12 @@ button:hover{
     font-size: 1.5vmax;
     line-height: 1vmax;
 }
+.socialBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .hidden{
     display: none;
 }
@@ -905,10 +910,10 @@ button:hover{
         display: block;
     }
     .navbar{
-        width: 100%;
+        width: 100vw;
     }
     .logo{
-        width:100%;
+        width:40vmax;
     }
     .brand-name{
         width: 100%;
